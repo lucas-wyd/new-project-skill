@@ -1,0 +1,6 @@
+interface:
+  display_name: "New Project"
+  short_description: "Define, research, and plan projects interactively"
+  default_prompt: "Use $new-project to recover this project's current stage and guide its next definition, research, design, or planning decision, showing each completed result for my review before continuing."
+policy:
+  allow_implicit_invocation: false
