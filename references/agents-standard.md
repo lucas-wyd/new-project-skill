@@ -20,13 +20,9 @@ For a nested project, place its context within the intended scope; add a short r
 
 For a blank project omit unknown tools, commands, architecture, and future milestones. Use a few short sections, not a fixed quota or a copy of this reference.
 
-## Domain glossary
+## Domain language
 
-A domain glossary is separate from project instructions. Create one only when multiple ambiguous or specialized domain terms materially affect product, design, or implementation decisions. Do not derive it from `AGENTS.md` or create it as a generic project summary.
-
-When a relevant `CONTEXT.md` already exists, treat it as the domain glossary unless the repository establishes another meaning. If a root `CONTEXT-MAP.md` maps several domains, follow it to the glossary for the affected area. Keep each glossary limited to stable terms, meanings, relationships, and resolved ambiguities; keep implementation decisions, plans, approvals, and current status in their authoritative documents.
-
-When creating a glossary, prefer a maintained, tracked project document because its vocabulary should travel with the code. Keep private planning details out of it. Add a concise pointer from the active instruction file that states when to read it, such as before naming domain concepts or changing domain behavior. Ordinary projects with clear terminology need no glossary.
+If ambiguous or specialized domain terms materially affect project decisions, read [domain language](domain-language.md) before creating or updating a glossary. Clear terminology needs no glossary.
 
 ## Keep instructions proportional and durable
 

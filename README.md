@@ -66,7 +66,6 @@ For a domain-heavy project, the skill may also create a tracked `CONTEXT.md` con
 
 ## Supporting skills
 
-- `writing-for-agents`, when installed, supplies authoring discipline for project instructions and other agent-facing documents. `new-project` remains responsible for their project-specific content, navigation, and lifecycle boundaries.
 - [Agent Reach](https://github.com/Panniantong/Agent-Reach) is the preferred internet-retrieval layer for authorized comparison research. `new-project` retains responsibility for research scope, source assessment, synthesis, recommendations, and lifecycle records.
 - `$writing-plans`, when installed, supplies the detailed implementation-plan workflow. `new-project` provides its approved brief, design, constraints, output location, and lifecycle checkpoints.
 - `$deep-research` is not invoked automatically. It is reserved for requests that explicitly ask for Deep research.
@@ -85,6 +84,7 @@ Unavailable optional skills do not stop the overall lifecycle. For research, how
     ├── agents-standard.md
     ├── collaboration.md
     ├── continuity.md
+    ├── domain-language.md
     ├── repository-setup.md
     ├── stages.md
     └── visual-decisions.md

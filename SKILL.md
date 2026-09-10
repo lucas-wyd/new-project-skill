@@ -1,6 +1,6 @@
 ---
 name: new-project
-description: Guide project definition, approved online comparison research, design, implementation planning, repository bootstrap, and handoff when the user explicitly invokes $new-project. Recover the current stage when resuming an existing project. Do not activate from general project-starting intent or ordinary feature work.
+description: Define or recover a project, then guide research, design, planning, repository setup, and implementation handoff.
 ---
 
 # New Project
@@ -42,8 +42,6 @@ Design approval permits implementation planning, and plan approval permits hando
 ## Supporting skills and completion
 
 Use an available supporting skill only when its scope helps the current stage; an optional unavailable skill never blocks this lifecycle.
-
-When creating or revising project instructions or another document written primarily for agents, use `writing-for-agents` as an authoring discipline when it is available. Keep lifecycle decisions, document roles, filenames, and authorization boundaries in this skill; do not make the project depend on the supporting skill.
 
 For authorized internet research, use `agent-reach` as the research-retrieval skill when it is available. Follow its platform routing, backend checks, and retry guidance. Keep research authorization, query boundaries, evidence assessment, synthesis, recommendations, and lifecycle records in this skill; `agent-reach` retrieves source material and does not replace those responsibilities. Do not silently substitute another internet-research workflow when `agent-reach` or a required channel is unavailable; report the coverage gap and let the user decide whether to continue with narrower evidence.
 
