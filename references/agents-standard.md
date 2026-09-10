@@ -20,9 +20,19 @@ For a nested project, place its context within the intended scope; add a short r
 
 For a blank project omit unknown tools, commands, architecture, and future milestones. Use a few short sections, not a fixed quota or a copy of this reference.
 
+## Domain glossary
+
+A domain glossary is separate from project instructions. Create one only when multiple ambiguous or specialized domain terms materially affect product, design, or implementation decisions. Do not derive it from `AGENTS.md` or create it as a generic project summary.
+
+When a relevant `CONTEXT.md` already exists, treat it as the domain glossary unless the repository establishes another meaning. If a root `CONTEXT-MAP.md` maps several domains, follow it to the glossary for the affected area. Keep each glossary limited to stable terms, meanings, relationships, and resolved ambiguities; keep implementation decisions, plans, approvals, and current status in their authoritative documents.
+
+When creating a glossary, prefer a maintained, tracked project document because its vocabulary should travel with the code. Keep private planning details out of it. Add a concise pointer from the active instruction file that states when to read it, such as before naming domain concepts or changing domain behavior. Ordinary projects with clear terminology need no glossary.
+
 ## Keep instructions proportional and durable
 
 Link detail where it matters, such as “For permission-callback changes, read …”. Do not require every document or old plan before a small edit. Keep broadly applicable constraints at the root and substantial contracts/manual procedures in relevant maintained documents or scoped instructions.
+
+Write each documentation pointer as a condition plus a destination: state what the document contains and which work requires it. Keep each fact or rule in one authoritative place instead of copying its meaning into the pointer.
 
 Avoid repeating global rules and existing documentation. If contributors lack the global agreement, include only what the project needs to be self-contained. Preserve important product, safety, and licensing constraints when shortening an existing file. Prefer repository-relative paths and do not require unavailable local notes for routine work supported by tracked context.
 
