@@ -46,7 +46,7 @@ For repository setup only:
 Use $new-project to initialize and publish this project repository. Skip product discovery.
 ```
 
-The skill shows each material deliverable for review and stops at the relevant decision boundary. By default, implementation begins only after a separate, explicit start request.
+The skill first asks where to store the project unless you have already chosen its directory. It shows each material deliverable before opening its review question, then waits for your submitted answer without sending a closing response. By default, implementation begins only after a separate, explicit start request.
 
 ## Local project records
 

@@ -8,7 +8,11 @@ Use `request_user_input_async` when available. Use `request_user_input` only whe
 
 Ask one decision or a small related batch at a time. Offer two or three concrete options when useful, put the recommendation first, and explain its fit and main tradeoff within or before the chooser. The question must remain understandable when displayed on its own. Use free text for names, paths, or facts that do not have sensible alternatives; do not add an “Other” choice where the UI supplies custom input.
 
-When the user is unsure, offer a concrete example, smaller scope, or reasoned recommendation. Explain unfamiliar concepts only when relevant. Stop interviewing once enough is known for the next decision; state reversible, low-impact assumptions. Allow a reasonable opportunity to answer optional questions before using such an assumption. Required decisions remain pending until answered; continue only independent authorized work.
+Put explanations and review summaries before opening the question tool. After opening it, keep the question pending until the user submits an answer or explicitly cancels or redirects the request. An asynchronous tool response such as `accepted: true` acknowledges display of the question; it is not the user's answer. A preselected option and elapsed time are not answers either.
+
+While the answer is pending, wait quietly using the host's interruptible wait mechanism (for example, `clock.sleep` in intervals of at most 60 seconds). After each wait, check for the user's reply and wait again if none arrived. Do not send a final response, an empty final message, repeated reminders, or another question, and do not advance the workflow. If the host cannot keep the turn pending, disclose that limitation before asking rather than claiming the tool blocks. Resume from the submitted answer; a new instruction that cancels or redirects the task takes precedence.
+
+When the user is unsure, offer a concrete example, smaller scope, or reasoned recommendation. Explain unfamiliar concepts only when relevant. Stop interviewing once enough is known for the next decision. State reversible, low-impact assumptions before deciding whether a question is needed; once a question is presented, use the pending-answer protocol above rather than a timeout default.
 
 ## Choose the user's involvement
 
